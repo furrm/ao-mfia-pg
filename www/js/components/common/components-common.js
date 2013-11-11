@@ -51,7 +51,6 @@ angular.module('components-common', [])
             restrict:'AE',
             templateUrl:'templates/components/common/sign-in.html' ,
             replace:true
-//            scope:{type:'@'}
         }
     })
 ;

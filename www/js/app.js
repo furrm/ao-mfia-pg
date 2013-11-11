@@ -1,4 +1,5 @@
 "use strict";
+
 angular.module('mfia', [
         'ngRoute',
         'services-common',
@@ -6,17 +7,13 @@ angular.module('mfia', [
         'components-common',
         'components-finance',
         'components-lookups'
-//    'controllers-common'
-    ])
-    .config(['$routeProvider', function ($routeProvider) {
+    ]).config(['$routeProvider', function ($routeProvider) {
         $routeProvider
             .when('/main', {
-                templateUrl: 'templates/content/main.html',
-                controller: 'AppCtrl'
+                templateUrl: 'templates/content/main.html'
             })
             .when('/signin', {
-                templateUrl: 'templates/content/sign-in.html',
-                controller: 'AppCtrl'
+                templateUrl: 'templates/content/sign-in.html'
 
             })
             .when('/reports', {
@@ -25,29 +22,14 @@ angular.module('mfia', [
             .when('/finance-report', {
                 templateUrl: 'templates/content/finance-report.html'
             })
-//            .when('/matter-info', {
-//                templateUrl: 'templates/content/matter-info.html'
-//            })
-//            .when('/matter-overview-life-to-date', {
-//                templateUrl: 'templates/content/matter-overview-life-to-date.html'
-//            })
-//            .when('/work-in-progress', {
-//                templateUrl: 'templates/content/work-in-progress.html'
-//            })
-//            .when('/unpaid-invoices', {
-//                templateUrl: 'templates/content/unpaid-invoices.html'
-//            })
             .otherwise({redirectTo: '/main'});
     }])
     .controller('AppCtrl', function ($scope, applicationStateMgr) {
-        $scope.name = 'AppCtrl'
+        $scope.name = 'AppCtrl';
 
         $scope.applicationStateMgr = applicationStateMgr;
-//        $location.path('signin');
 
-        $scope.go = function () {
-            //$location.path('/main');
-        };
+
 
         $scope.signIn = function (username) {
             applicationStateMgr.manager.signInUser(username);
@@ -64,21 +46,6 @@ angular.module('mfia', [
 
         $scope.matterIsSelected = applicationStateMgr.manager.selectedMatter.matterIsSelected;
 
-//        $scope.toggleSignIn = function(){
-//
-//            if(!applicationStateMgr.manager.userIsSignedIn)
-//            {
-//                applicationStateMgr.manager.signInUser();
-////                $location.path('/main');
-////                console.log(applicationStateMgr);
-//
-//            }
-//            else{
-//                applicationStateMgr.manager.signOutUser();
-////                $location.path('/signin');
-//                console.log(applicationStateMgr);
-//            }
-//        }
 
 
     })
