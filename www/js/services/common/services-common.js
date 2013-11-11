@@ -20,6 +20,10 @@ angular.module('services-common', []).value('offCanvasStateMgr', {
                 },
                 "signOutUser": function () {
                     this.userIsSignedIn = false;
+                },
+                "selectedMatter":{
+                    "matterId": '',
+                    "matterName": ''
                 }
             }
         }
