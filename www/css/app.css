@@ -473,11 +473,11 @@ a:focus {
   text-decoration: none;
 }
 body {
-  background: url("background-01.jpg") no-repeat center center;
-  -webkit-background-size: 400px;
-  -moz-background-size: 400px;
-  -o-background-size: 400px;
-  background-size: 400px;
+  background: url("../background.jpg") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 ::-webkit-input-placeholder {
   /* WebKit browsers */
