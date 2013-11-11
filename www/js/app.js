@@ -45,8 +45,5 @@ angular.module('mfia', [
         }
 
         $scope.matterIsSelected = applicationStateMgr.manager.selectedMatter.matterIsSelected;
-
-
-
     })
 ;

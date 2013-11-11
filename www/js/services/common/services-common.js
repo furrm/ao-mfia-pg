@@ -21,7 +21,7 @@ angular.module('services-common', []).value('offCanvasStateMgr', {
                 "signOutUser": function () {
                     this.userIsSignedIn = false;
                     this.selectedMatter.matterId = 'Select Matter';
-                    this.selectedMatter.matterName = 'Please select a matter from your subscribed matters.'
+                    this.selectedMatter.matterName = 'Please select a matter from your subscribed matters.';
                 },
                 "selectedMatter":{
                     "matterIsSelected": false,

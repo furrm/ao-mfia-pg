@@ -117,20 +117,7 @@ angular.module('services-data', [])
                     "closeDate": ""
                 }
             }
-//            ,
-//            getMatterInfo: function(matterId) {
-//                var deferred = $q.defer();
-//                $resource('apps/mfia/api/report/matterinfo/:matterId', { 'matterId': matterId })
-//                    .query(
-//                    function(data) {
-//                        $log.info('SUCCESS!!');
-//                        deferred.resolve(data);
-//                    }, function(response) {
-//                        $log.info('FAILED!!');
-//                        deferred.reject(response);
-//                    });
-//                return deferred.promise;
-//            }
+
         }
     })
     .factory('matterLifeToDate', function () {
