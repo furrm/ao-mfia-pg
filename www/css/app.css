@@ -562,6 +562,9 @@ a:focus {
   background-color: none;
   text-decoration: none;
 }
+.off-canvas-wrapper {
+  z-index: 1;
+}
 body {
   background: url("../background.png") no-repeat center center;
   -webkit-background-size: contain;
