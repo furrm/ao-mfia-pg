@@ -1,20 +1,19 @@
 @import "mfia-branding";
 @import "ao-semantics";
 
-//.off-canvas-sidebar{
-//  > .ao-panel{
-//    .ao-panel;
-//
-//  }
-//}
 
 .sidebar.ao-panel, .main-content.ao-panel {
   @panel-header-height: 44px;
+//  @panel-footer-height:50px;
+
   border: 0px;
 
   &.align-content-to-header {
     padding-top: @panel-header-height;
   }
+//  &.align-content-to-footer {
+//    padding-bottom: @panel-footer-height;
+//  }
   > header {
     height: @panel-header-height;
   }
@@ -29,6 +28,11 @@
 
 //SIDEBAR MAIN PANEL
 .sidebar.ao-panel {
+  @panel-footer-height:30px;
+
+    &.align-content-to-footer {
+      padding-bottom: @panel-footer-height;
+    }
   > header {
     background-color: @Black;
   }
@@ -38,10 +42,18 @@
   > section {
     background-color: @Black-Lighten;
   }
+  > footer{
+    height:@panel-footer-height;
+    background-color: @Black;
+  }
+
 }
 
 // CONTENT MAIN PANEL
 .main-content.ao-panel {
+  @panel-footer-height:30px;
+
+
   > header {
     background-color: @White;
   }
@@ -50,6 +62,10 @@
   }
   > section {
     background-color: @White-Lighten;
+  }
+  > footer{
+    height:@panel-footer-height;
+    background-color: @Black;
   }
 }
 
@@ -118,19 +134,27 @@
 
 }
 
+// SIGN IN
 .ao-panel[title=signin] {
   //  @signin-background-color: @White-Lighten;
   @panel-header-height: 40px;
+  @panel-footer-height:60px;
+
+  margin-top: 100px;
 
   background-color: @White-Lighten2;
 
   &.align-content-to-header {
     padding-top: @panel-header-height;
   }
+  &.align-content-to-footer {
+    padding-bottom: @panel-footer-height;
+  }
   > header {
     height: @panel-header-height;
     background-color: @White-Lighten2;
-    color: red;
+    color: @Red;
+    text-align: center;
   }
   > section {
     > .content {
@@ -162,7 +186,12 @@
         //        width: 100%;
         //        background-color: @Fuchsia;
       }
+
     }
+  }
+  >footer{
+    height:@panel-footer-height;
+    background-color: @White-Lighten2;
   }
 }
 
@@ -176,3 +205,54 @@
 
 }
 
+// FINANCE
+.finance.ao-panel{
+  @panel-header-height: 200px;
+  @panel-footer-height:60px;
+
+  background-color: transparent;
+  border:0px;
+
+
+  &.align-content-to-header {
+    padding-top: @panel-header-height;
+  }
+  &.align-content-to-footer {
+    padding-bottom: @panel-footer-height;
+  }
+  >header{
+    height:@panel-header-height;
+    background-color: @White-Lighten2;
+    text-align: center;
+  }
+  >section{
+
+  }
+  >footer{
+    height:@panel-footer-height;
+    background-color: @Black-Lighten;
+    color: @White;
+  }
+
+}
+
+// MAIN
+.main.ao-panel{
+  @panel-header-height: 200px;
+
+  background-color: transparent;
+  border:0px;
+
+
+  &.align-content-to-header {
+    padding-top: @panel-header-height;
+  }
+  >header{
+    height:@panel-header-height;
+    background-color: @White-Lighten2;
+    text-align: center;
+  }
+  >section{
+    background-color: @White-Lighten2;
+  }
+}

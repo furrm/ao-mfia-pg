@@ -182,8 +182,13 @@
   background-color: #b23427;
 }
 .report.button {
+  font-size: 20px;
+  color: #ffffff;
   height: 100px;
   margin: 10px;
+}
+a {
+  text-decoration: none;
 }
 a:hover,
 a:focus {

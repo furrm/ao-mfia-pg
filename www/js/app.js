@@ -4,6 +4,7 @@ angular.module('mfia', [
         'services-common',
         'services-data',
         'components-common',
+        'components-finance',
         'components-lookups'
 //    'controllers-common'
     ])
@@ -21,9 +22,9 @@ angular.module('mfia', [
             .when('/reports', {
                 templateUrl: 'templates/content/reports.html'
             })
-//            .when('/chart', {
-//                templateUrl: 'templates/content/chart.html'
-//            })
+            .when('/finance-report', {
+                templateUrl: 'templates/content/finance-report.html'
+            })
 //            .when('/matter-info', {
 //                templateUrl: 'templates/content/matter-info.html'
 //            })
@@ -57,6 +58,9 @@ angular.module('mfia', [
 
         };
 
+        $scope.selectReport = function(reportName){
+            applicationStateMgr.manager.selectedReport.status = reportName;
+        }
 
 //        $scope.toggleSignIn = function(){
 //

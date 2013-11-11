@@ -341,6 +341,9 @@
 .main-content.ao-panel > header > .off-canvas.icon-button {
   height: 44px;
 }
+.sidebar.ao-panel.align-content-to-footer {
+  padding-bottom: 30px;
+}
 .sidebar.ao-panel > header {
   background-color: #000000;
 }
@@ -350,6 +353,10 @@
 .sidebar.ao-panel > section {
   background-color: rgba(0, 0, 0, 0.8);
 }
+.sidebar.ao-panel > footer {
+  height: 30px;
+  background-color: #000000;
+}
 .main-content.ao-panel > header {
   background-color: #ffffff;
 }
@@ -358,6 +365,10 @@
 }
 .main-content.ao-panel > section {
   background-color: rgba(255, 255, 255, 0.5);
+}
+.main-content.ao-panel > footer {
+  height: 30px;
+  background-color: #000000;
 }
 .subscribed-matters.ao-panel {
   border: 0px;
@@ -406,15 +417,20 @@
   padding-left: 0px;
 }
 .ao-panel[title=signin] {
+  margin-top: 100px;
   background-color: rgba(255, 255, 255, 0.75);
 }
 .ao-panel[title=signin].align-content-to-header {
   padding-top: 40px;
 }
+.ao-panel[title=signin].align-content-to-footer {
+  padding-bottom: 60px;
+}
 .ao-panel[title=signin] > header {
   height: 40px;
   background-color: rgba(255, 255, 255, 0.75);
-  color: red;
+  color: #b23427;
+  text-align: center;
 }
 .ao-panel[title=signin] > section > .content > input {
   padding-top: 10px;
@@ -458,6 +474,10 @@
   background-color: #c7c8ca;
   color: #ffffff;
 }
+.ao-panel[title=signin] > footer {
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
 .ao-panel[type=banner] {
   margin-top: 50px;
   padding-top: 50px;
@@ -465,4 +485,39 @@
   background-color: rgba(255, 255, 255, 0.75);
   border: 0px;
   text-align: center;
+}
+.finance.ao-panel {
+  background-color: transparent;
+  border: 0px;
+}
+.finance.ao-panel.align-content-to-header {
+  padding-top: 200px;
+}
+.finance.ao-panel.align-content-to-footer {
+  padding-bottom: 60px;
+}
+.finance.ao-panel > header {
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+.finance.ao-panel > footer {
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+}
+.main.ao-panel {
+  background-color: transparent;
+  border: 0px;
+}
+.main.ao-panel.align-content-to-header {
+  padding-top: 200px;
+}
+.main.ao-panel > header {
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+.main.ao-panel > section {
+  background-color: rgba(255, 255, 255, 0.75);
 }

@@ -1,11 +1,16 @@
-<div class="ao-panel" type="banner">
-    <!--{{applicationStateMgr}}-->
-    <h1>{{applicationStateMgr.manager.selectedMatter.matterId}}</h1>
-    <p>{{applicationStateMgr.manager.selectedMatter.matterName}}</p>
-    <div class="container">
+<div class="main ao-panel fill align-content-to-header">
+    <header>
+        <div class="content">
+            <h1>{{applicationStateMgr.manager.selectedMatter.matterId}}</h1>
+            <p>{{applicationStateMgr.manager.selectedMatter.matterName}}</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <a class="mustard report button fill">
+                <a class="mustard report button fill" ng-click="selectReport('1')" href="#/finance-report">
                     <div class="ao-panel remove-border">
                         <section>
                             <div class="content">Matter Information</div>
@@ -14,15 +19,33 @@
                 </a>
             </div>
             <div class="col-md-3">
-                <button class="blue report button fill">Matter Overview Life To Date</button>
+                <a class="blue report button fill" ng-click="selectReport('2')" href="#/finance-report">
+                    <div class="ao-panel remove-border">
+                        <section>
+                            <div class="content">Matter Overview Life To Date</div>
+                        </section>
+                    </div>
+                </a>
             </div>
             <div class="col-md-3">
-                <button class="apple report button fill">Work In Progress</button>
+                <a class="apple report button fill" ng-click="selectReport('3')" href="#/finance-report">
+                    <div class="ao-panel remove-border">
+                        <section>
+                            <div class="content">Work In Progress</div>
+                        </section>
+                    </div>
+                </a>
             </div>
             <div class="col-md-3">
-                <button class="lavender report button fill">Unpaid Invoices</button>
+                <a class="lavender report button fill" ng-click="selectReport('4')" href="#/finance-report">
+                    <div class="ao-panel remove-border">
+                        <section>
+                            <div class="content">Unpaid Invoices</div>
+                        </section>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
-    <p>{{applicationStateMgr}}</p>
+    </section>
 </div>

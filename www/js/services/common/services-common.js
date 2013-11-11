@@ -24,6 +24,9 @@ angular.module('services-common', []).value('offCanvasStateMgr', {
                 "selectedMatter":{
                     "matterId": 'Select Matter',
                     "matterName": 'Please select a matter from your subscribed matters.'
+                },
+                "selectedReport":{
+                    "status":'1'
                 }
             }
         }

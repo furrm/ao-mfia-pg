@@ -4,8 +4,8 @@
         <header>
 
             <!--START:ICON BUTTON-->
-            <!--<button ng-disabled="!applicationStateMgr.manager.userIsSignedIn" class="off-canvas icon-button" ng-click="toggleMenuState('open')">-->
-            <button class="off-canvas icon-button" ng-click="toggleMenuState('open')">
+            <button ng-disabled="!applicationStateMgr.manager.userIsSignedIn" class="off-canvas icon-button" ng-click="toggleMenuState('open')">
+            <!--<button class="off-canvas icon-button" ng-click="toggleMenuState('open')">-->
                 <i class="fa fa-reorder fa-2x"></i>
             </button>
             <!--END:ICON BUTTON-->
@@ -28,12 +28,10 @@
             </div>
         </header>
         <section>
-            <div class="">
-                <ng-view></ng-view>
-            </div>
+                <ng-view class="fill"></ng-view>
         </section>
         <footer>
-            <div class="content">CONTENT SLIDER FOOTER</div>
+            <div class="content">&nbsp;</div>
         </footer>
     </div>
 </div>
