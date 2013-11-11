@@ -177,11 +177,16 @@
 .apple.button {
   background-color: #c2cd23;
 }
+.red.button,
+.red.button:hover {
+  background-color: #b23427;
+}
 .report.button {
   height: 100px;
   margin: 10px;
 }
 a:hover,
 a:focus {
+  background-color: none;
   text-decoration: none;
 }
