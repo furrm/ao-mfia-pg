@@ -418,7 +418,7 @@
 }
 .ao-panel[title=signin] {
   margin-top: 100px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .ao-panel[title=signin].align-content-to-header {
   padding-top: 40px;
@@ -428,7 +428,7 @@
 }
 .ao-panel[title=signin] > header {
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.8);
   color: #b23427;
   text-align: center;
 }
@@ -476,13 +476,13 @@
 }
 .ao-panel[title=signin] > footer {
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .ao-panel[type=banner] {
   margin-top: 50px;
   padding-top: 50px;
   height: 300px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.8);
   border: 0px;
   text-align: center;
 }
@@ -494,17 +494,20 @@
   padding-top: 200px;
 }
 .finance.ao-panel.align-content-to-footer {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 .finance.ao-panel > header {
   height: 200px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
 }
 .finance.ao-panel > footer {
-  height: 60px;
-  background-color: rgba(0, 0, 0, 0.8);
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
   color: #ffffff;
+}
+.finance.ao-panel > footer > .finance.icon-button {
+  height: 40px;
 }
 .main.ao-panel {
   background-color: transparent;
@@ -515,9 +518,14 @@
 }
 .main.ao-panel > header {
   height: 200px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
 }
 .main.ao-panel > section {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.report-button.ao-panel > footer {
+  height: 50px;
+  background-color: transparent;
+  color: #ffffff;
 }

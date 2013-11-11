@@ -62,6 +62,8 @@ angular.module('mfia', [
             applicationStateMgr.manager.selectedReport.status = reportName;
         }
 
+        $scope.matterIsSelected = applicationStateMgr.manager.selectedMatter.matterIsSelected;
+
 //        $scope.toggleSignIn = function(){
 //
 //            if(!applicationStateMgr.manager.userIsSignedIn)

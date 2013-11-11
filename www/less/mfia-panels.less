@@ -208,7 +208,7 @@
 // FINANCE
 .finance.ao-panel{
   @panel-header-height: 200px;
-  @panel-footer-height:60px;
+  @panel-footer-height:40px;
 
   background-color: transparent;
   border:0px;
@@ -230,8 +230,11 @@
   }
   >footer{
     height:@panel-footer-height;
-    background-color: @Black-Lighten;
+    background-color: @White-Lighten2;
     color: @White;
+  }
+  > footer > .finance.icon-button {
+    height: @panel-footer-height;
   }
 
 }
@@ -254,5 +257,16 @@
   }
   >section{
     background-color: @White-Lighten2;
+  }
+}
+
+.report-button.ao-panel{
+  @panel-footer-height:50px;
+
+  >footer{
+    height:@panel-footer-height;
+    background-color: transparent;
+    color: @White;
+
   }
 }
